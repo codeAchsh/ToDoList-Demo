@@ -1,52 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="デモ用：シンプルで使いやすいTo Do List。買い物リスト・家事リストの体験ができます。" />
-  <meta name="author" content="codeAchsh" />
-  <link rel="shortcut icon" href="assets/images/check.ico" />
-  <link rel="stylesheet" href="assets/style.css" />
-  <title>To Do List（デモ版）</title>
-</head>
-<body>
-  <header>
-    <h1>To Do List（デモ版）</h1>
-    <p class="notice">
-      ※このデモではブラウザに一時保存されますが、<br />
-      長期保存や複数作品の管理には完全版をご利用ください。<br />
-      👉 <a href="https://achshcode.gumroad.com/l/bcpsv" target="_blank">Gumroadで完全版を見る</a>
-    </p>
-  </header>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GDP68YS5F2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <main>
-    <section class="todo-list">
-      <div class="list-1">
-        <h2 contenteditable="true">🛒 買い物メモ（カスタマイズ可）</h2>
-        <div class="todo-add">
-          <input type="text" id="shopping-input" placeholder="リストを入力" />
-          <button onclick="addShoppingItem()">追加</button>
-        </div>
-        <ul class="todo-section" id="shopping-list"></ul>
-        <button onclick="removeCheckedItems('shopping-list')">🗑️ 完了したリストを削除</button>
-      </div>
-
-      <div class="list-2">
-        <h2 contenteditable="true">🧹 家事リスト（カスタマイズ可）</h2>
-        <div class="todo-add">
-          <input type="text" id="housework-input" placeholder="リストを入力" />
-          <button onclick="addHouseworkItem()">追加</button>
-        </div>
-        <ul class="todo-section" id="housework-list"></ul>
-        <button onclick="removeCheckedItems('housework-list')">🗑️ 完了したリストを削除</button>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 <a href="mailto:code.achsh@gmail.com">code.achsh@gmail.com</a></p>
-  </footer>
-
-  <script src="js/javascript.js"></script>
-</body>
-</html>
+  gtag('config', 'G-GDP68YS5F2');
+</script>
